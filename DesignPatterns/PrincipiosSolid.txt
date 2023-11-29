@@ -1,0 +1,99 @@
+------------------------------------------------------------------------
+
+            Princípios do Design Orientado a objetos (SOLID)            
+
+------------------------------------------------------------------------
+
+Single Responsibility Principle (Principio de responsabilidade única) -
+
+        -> Uma classe deve ter apenas um motivo para existir, se a classe
+           faz duas ou mais coisas, ela já está quebrando a regra da 
+           responsabilidade única;
+
+           Ex: Uma classe não pode abrir, fechar e salvar um arquivo.
+
+                Forma correta:
+                --------------
+                    Classe AbreArquivo:
+                        Class AbreArquivoJson(AbreArquivo):
+                        Class AbreArquivoPython(AbreArquivo):
+
+                    Classe FechaArquivo:
+                        Class FechaArquivoJson(FechaArquivo):
+                        Class FechaArquivoPython(FechaArquivo):
+
+                    Classe SalvaArquivo:
+                        Class SalvaArquivoJson(SalvaArquivo):
+                        Class SalvaArquivoPython(SalvaArquivo):
+
+------------------------------------------------------------------------
+
+Open/Closed principle (Principio do aberto/fechado) - 
+
+        -> Classes e métodos devem estar abertos para extensão e fechados
+           para modificações, ou seja, devemos criar classes abstratas
+           e criar classes que herdam da classe abstratas, e nunca modificar
+           a classe abstrata;
+
+           O que acho que deveria ser:
+                - Precisamos evitar modificar a classe abstrata, porém, se 
+                necessários, poderemos adicionar novas funcionalidades sem
+                interferiar nas funcionalidades existentes.
+
+           Ex: Classe Clientes e Classes PessoaFisica e PessoaJuridica
+
+                Forma correta:
+                --------------
+                    Classe Cliente:
+                        endereco = ...
+                        estado = ...
+                        cidade = ...
+                        telefone = ...
+                        email = ... (Depois de criado, precisou adicionar essa informação)
+
+                    Classe PessoaFisica(Cliente):
+                        nome = ...
+                        sobrenome = ...
+                        cpf = ...
+
+                        def nome_completo(self) -> str:
+                            return f'{self.nome} {self.sobrenome}'
+
+                    Classe PessoaJuridica(Cliente):
+                        empresa = ...
+                        cnpj = ...
+
+------------------------------------------------------------------------
+
+Liskov substitution principle (Principio de substituição de Liskov) -
+
+        -> Classes derivadas, deve, ser capazes de substitur totalmente 
+           a classe base.
+
+------------------------------------------------------------------------
+
+Interface segragation principle (Principio da segregação da interface) - 
+
+        -> Os clientes não devem ser forçados a depender de interfaces que
+           não utilizam, ou seja, as classe precisam ser abastradas, e as
+           classe especificas desenvolvem seus métodos conforme suas 
+           necessidades
+
+------------------------------------------------------------------------
+
+Dependency inversion principle (Principio de inverão de dependencia) -
+
+        -> Demos ter classes abstratas para se comunicar com o mundo externo,
+           ou seja, não podemos ter classes que são dependentes um das outras.
+
+           Ex: Class Eccomerce e Class GerenciadorPagamentos Class ApiMercadoPago
+
+                Class Eccomerce:
+                    ...
+                    GerenciadorPagamentos.realizar_pagamento()
+
+                OBS: Meu GerenciadorPagamentos será responsavel por conectar nas
+                     formas de pagamentos, ou seja, não vou precisar mudar o meu Eccomerce
+                     apenas modificar o meu gerenciador de pagamentos. sempre será chamado
+                     o metodo realizar_pagamento(), mesmo que o PicPay, MercadoPago ou outra
+                     forma de pagamento tenham outros nomes em suas Apis;
