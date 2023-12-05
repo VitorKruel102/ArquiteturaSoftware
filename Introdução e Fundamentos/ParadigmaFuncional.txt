@@ -1,0 +1,19 @@
+Paradigma Funcional (PF) --> Criada: 1930->1950
+    |
+    |
+    |--> Imutabilidade:
+    |
+    |
+    |
+    |
+    |--> Funções Puras:
+    |
+    |
+    |
+    |
+    |--> Currying:
+    |
+    |
+    |
+    |
+    |--> Composição de funções:

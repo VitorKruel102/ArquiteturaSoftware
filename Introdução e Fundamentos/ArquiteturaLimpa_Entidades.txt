@@ -1,0 +1,31 @@
+Arquitetura Limpa - Entidades:
+
+                    Entidades = Regras de Negócios 
+                    (Modelagem de Domínio)
+
+                    Casos de Uso = Fluxo de execução
+                   ___________________________________________
+                   |                                         |
+                   |                                         |
+                   |   ___________________________________   |
+                   |   |                                 |   |
+                   |   |                                 |   |
+                   |   |   ___________________________   |   |
+                   |   |   |                         |   |   |
+                   |   |   |    _________________    |   |   |
+                   |   |   |    |               |    |   |   |
+                   |   |   |    |   Entidades   |    |   |   |
+                   |   |   |    |               |    |   |   |
+                   |   |   |    |||||||||||||||||    |   |   |
+                   |   |   |                         |   |   |
+                   |   |   |      Casos de uso       |   |   |
+                   |   |   |||||||||||||||||||||||||||   |   |
+                   |   |                                 |   |
+                   |   |           Adaptadores           |   |
+                   |   |||||||||||||||||||||||||||||||||||   |
+                   |                                         |
+                   |   Externos(DB, Apis, Emails, FramWork)  |
+                   |||||||||||||||||||||||||||||||||||||||||||
+
+                 As camadas externas dependem das camadas internas 
+                               e não o contrário.

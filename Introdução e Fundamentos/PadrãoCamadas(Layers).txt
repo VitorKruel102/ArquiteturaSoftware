@@ -1,0 +1,28 @@
+Padrão Camadas(Layers)
+
+                                  Dependem
+    _______________________________     _____________
+    |                             |     |   Regra   |
+    |     Apresentação (View)     | --> |  Negócio  |
+    |                             |     |   Comum   |
+    |-----------------------------|     |           |
+    |                             |     |           |
+    |      Negócio (Regras)       | --> |           |
+    |                             |     |           |
+    |-----------------------------|     |           |
+    |                             |     |           |
+    |    Infra (DB, Email,...)    | --> |           |
+    |                             |     |           |
+    |||||||||||||||||||||||||||||||     |||||||||||||
+
+                                       (Intermediador)
+
+Resumo:
+    A arquitetura em camadas (Layers) pode apresentar desafios 
+    quando há um alto nível de dependência entre as camadas, 
+    levando a conexões diretas com a infraestrutura. Isso pode 
+    resultar em acoplamento forte e dificultar a manutenção e a 
+    evolução do sistema. Em contraste, a arquitetura hexagonal 
+    (também conhecida como Arquitetura de Portas e Adaptadores) 
+    busca mitigar esses problemas ao isolar as camadas da lógica 
+    de negócios da infraestrutura.

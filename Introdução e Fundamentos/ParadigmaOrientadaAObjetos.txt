@@ -1,0 +1,30 @@
+Paradigma Orientada a Objetos (POO) --> Criada: Decada 1960
+    |
+    |
+    |--> Encapsulamento:
+    |               |
+    |               |-----> Ocultar os detalhes.
+    |
+    |
+    |--> Herança:
+    |       |
+    |       |-----> subclasses têm a capacidade de herdar métodos e atributos da superclasse
+    |
+    |
+    |--> Polimorfismo:
+            |
+            |-----> Polimorfismo é Quando temos uma superclasse genérica, e subclasses especializada
+
+
+Estrutura Encapsulamento:
+
+    Objeto:
+    _____________________
+    |                   |
+    |     Atributos     |
+    |                   |
+    |-------------------|
+    |                   |
+    |   Comportamentos  |
+    |                   |
+    |||||||||||||||||||||

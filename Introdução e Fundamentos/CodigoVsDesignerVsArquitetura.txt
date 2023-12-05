@@ -1,0 +1,14 @@
+Níveis de Abstrações:
+
+----------------------------------------
+NIVEL 1         Arquitetura        $$$$$ -> Elevados custos de implementação são inevitáveis, uma vez que alterações
+                                            na arquitetura acarretam repercussões em diversos níveis do sistema.
+----------------------------------------
+NIVEL 2         Design                $$ -> Modificações no design têm um impacto direto no código-fonte.
+----------------------------------------
+NIVEL 3         Código Fonte           $ -> Alterações no código-fonte devem ser realizadas de maneira de evitar 
+                                            impactos nos demais níveis do sistema.
+----------------------------------------
+
+
+

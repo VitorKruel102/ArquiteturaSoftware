@@ -1,0 +1,33 @@
+O que é Arquitetura de Software?
+
+    "
+    Em Geral, a palavra "ARQUITETURA" é usada no
+    contexto de algo em um nível mais alto e que
+    independe dos detalhes dos níveis mais baixos,
+    enquanto 'DESIGN' parece muitas vezes sugerir
+    as estruturas e decisões de nível mais baixo.
+    "
+    - Martin, Robert C. (Arquitetura Limpa)
+
+Quais os objetivos da Arquitetura?
+
+    "
+    O objetivo da arquitetura de Software é minimizar
+    os recursos humanos necessários para construtir e 
+    manter um determinado sistema.
+    "
+    - Martin, Robert C. (Arquitetura Limpa)
+
+    "
+    A Arquitetura representa as decisões significativas
+    de design que moldam um sistema, onde a significância
+    é medida pelo custo da mudança.
+    "
+    - Grady Booch
+
+    "
+    A arquitetura é o conjunto de decisões que você queria ter
+    tomado logo no início de um projeto, mas, como todo mundo,
+    não teve a imaginação necessária.
+    "
+    - Ralph Johnson

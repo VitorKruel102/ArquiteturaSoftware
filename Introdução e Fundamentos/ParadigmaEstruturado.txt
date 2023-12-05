@@ -1,0 +1,18 @@
+Paradigma Estruturado (EST) --> Criada: 1968->1970
+    |
+    |
+    |--> Estrutura de Controle:
+    |                    |
+    |                    |-----> If / Else
+    |                    |-----> For / While / switch
+    |
+    |--> Procedimento:
+                |
+                |-----> Reestruturar um algoritmo previamente generalizado ao 
+                        encapsulá-lo dentro de um escopo ou nome específico.
+
+Resumo:
+    O Paradigma de Estrutura incorpora a concepção de uma "Pilha de execução", 
+    onde uma função pode chamar outra, e assim por diante. No entanto, ao concluir 
+    a execução de uma função, é necessário retornar à função anterior, seguindo 
+    esse padrão até retornar à função inicial.
